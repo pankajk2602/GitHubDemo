@@ -28,7 +28,7 @@ public class LoginPageTest extends BaseClass {
 	@Test()
 	public void loginTest() {
 		indexpage = new IndexPage();
-		loginpage =indexpage.clickOnSignIn();
+		loginpage =indexpage.clickOnSignIn();//click on sign in page
 		Log.info("user is going to click on Signin");
 		homepage=loginpage.login(prop.getProperty("username") , prop.getProperty("password"));
 		//homepage=loginpage.login(uname , pswd);
